@@ -1,0 +1,146 @@
+<template>
+	<!-- 该部分为下拉容器 绑定容器的高度（页面内容高度 - 距离顶部距离），并绑定下拉的偏移量和回弹过渡时间
+h5中 100vh会包含tabbar高度  因此需使用100%替换 -->
+
+	<!-- #ifdef H5 -->
+	<view class="refresh-content" 
+	@touchstart="handleTouchstart"
+	@touchmove="handleTouchmove"
+	@touchend="handleTouchend"
+	:style="{
+		transform: 'translateY('+pageDeviation+'px)',
+		transition: pageTransition + 's',
+		height: 'calc(100% - ' + pageTop + 'px)',
+		maxHeight: 'calc(100% - ' + pageTop + 'px)',
+	}">
+	<!-- #endif -->
+	<!-- #ifndef H5 -->
+	<view class="refresh-content" 
+	@touchstart="handleTouchstart"
+	@touchmove="handleTouchmove"
+	@touchend="handleTouchend"
+	:style="{
+		transform: 'translateY('+pageDeviation+'px)',
+		transition: pageTransition + 's',
+		height: 'calc(100vh - ' + pageTop + 'px)',
+		maxHeight: 'calc(100vh - ' + pageTop + 'px)',
+	}">
+	<!-- #endif -->
+		<!-- 下拉刷新icon -->
+		<view class="loading-wrapper">
+			<view class="loading-icon iconfont icon-jiazaizhong"></view>
+		</view>
+		<!-- 插槽 -->
+		<slot></slot>
+	</view>
+</template>
+
+<script>
+	export default {
+		props: {
+			top: {
+				// 距离顶部距离, 单位upx
+				type: Number,
+				default: 0
+			}
+		},
+		data() {
+			return {
+				pageDeviation: 0,
+				pageTransition: 0,
+				startY: 0,
+				moveY: 0,
+				touchend: false
+			}
+		},
+		computed: {
+			pageTop() {
+				return uni.upx2px(this.top);
+			}
+		},
+		methods:{
+			handleTouchstart(e){
+				this.touchend = false;
+				this.pageTransition = 0;
+				this.startY = e.touches[0].pageY;
+			},
+			handleTouchmove(e){
+				if(this.touchend){
+					return;
+				}
+				
+				this.moveY = e.touches[0].pageY - this.startY;
+				
+				if(this.moveY >= 0){
+					this.pageDeviation = this.moveY;
+				}
+			},
+			handleTouchend(e){
+				
+				this.touchend = true;
+				if(this.moveY == 0){
+					return;
+				}
+				
+				this.pageTransition = 0.3;
+				
+				if(this.moveY >= 50){
+					// 加载数据
+					this.startPulldownRefresh();
+				}else {
+					this.pageDeviation = 0;
+				}
+				
+				this.startY = this.moveY = 0;
+			},
+			startPulldownRefresh(){
+				// console.log("加载数据");
+				this.pageDeviation = uni.upx2px(90);
+				// 加载数据
+				this.$emit('refresh');
+			},
+			endPulldownRefresh(){
+				this.pageDeviation = uni.upx2px(0);
+			}
+		}
+	}
+</script>
+
+<style lang="scss">
+	.refresh-content {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+		flex: 1;
+
+		/* 下拉刷新部分 */
+		.loading-wrapper {
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 88upx;
+			transform: translateY(-100%);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+
+			.loading-icon {
+				width: 36upx;
+				height: 36upx;
+				transition: .3s;
+				animation: load 1.2s cubic-bezier(0.37, 1.08, 0.7, 0.74) infinite;
+			}
+		}
+
+	}
+	@-webkit-keyframes load {
+		0% {
+			transform: rotate(0deg);
+		}
+	
+		100% {
+			transform: rotate(360deg);
+		}
+	}
+</style>
