@@ -1,0 +1,1323 @@
+{
+	"easycom": {
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/home/home",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/home/task",
+			"style": {
+				"navigationBarTitleText": "办理事项"
+			}
+		},
+		{
+			"path": "pages/person-picker",
+			"style": {
+				"navigationBarTitleText": "人员选择demo"
+			}
+		},
+		{
+			"path": "pages/loadMoreDemo",
+			"style": {
+				"navigationBarTitleText": "上拉加载下拉刷新更多demo"
+			}
+		},
+		{
+			"path": "pages/fileDemo",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/service/service",
+			"style": {
+				"navigationBarTitleText": "服务"
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/user/user-news",
+			"style": {
+				"navigationBarTitleText": "我的消息"
+			}
+		},
+		{
+			"path": "pages/user/user-submit",
+			"style": {
+				"navigationBarTitleText": "我的提交"
+			}
+		},
+		{
+			"path": "pages/user/user-password",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+			"path": "pages/service/repair/repair",
+			"style": {
+				"navigationBarTitleText": "维修"
+			}
+		},
+		{
+			"path": "pages/service/repair/repair-add",
+			"style": {
+				"navigationBarTitleText": "维修新增",
+				"app-plus": {
+					"titleNView": {
+						"titleSize": "17px",
+						"buttons": [
+							{
+								"float": "right",
+								"text": "流程须知",
+								"fontSrc": "/static/font/iconfont.ttf",
+								"fontSize": "14px",
+								"color": "#fff",
+								"width": "65px"
+				
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/service/repair/repair-detail",
+			"style": {
+				"navigationBarTitleText": "接单详情"
+			}
+		},
+		{
+			"path": "pages/service/repair/repair-niban",
+			"style": {
+				"navigationBarTitleText": "维修拟办"
+			}
+		},
+		{
+			"path": "pages/service/repair/repair-handle",
+			"style": {
+				"navigationBarTitleText": "维修办理"
+			}
+		},
+		{
+			"path": "pages/service/repair/repair-examine",
+			"style": {
+				"navigationBarTitleText": "维修审核"
+			}
+		},
+		{
+			"path": "pages/service/repair/repair-review",
+			"style": {
+				"navigationBarTitleText": "现场核查"
+			}
+		},
+		{
+			"path": "pages/service/repair/repair-finish",
+			"style": {
+				"navigationBarTitleText": "维修信息"
+			}
+		},
+		{
+			"path": "pages/service/repair/repair-check",
+			"style": {
+				"navigationBarTitleText": "审核详情"
+			}
+		},
+		{
+			"path": "pages/service/repair/repair-transfer",
+			"style": {
+				"navigationBarTitleText": "转单详情"
+			}
+		},
+		{
+			"path": "pages/service/repair/repair-detail-dpj",
+			"style": {
+				"navigationBarTitleText": "待评价"
+			}
+		},
+		{
+			"path": "pages/service/repair/repair-detail-ypj",
+			"style": {
+				"navigationBarTitleText": "已评价"
+			}
+		},
+		{
+			"path": "pages/service/inspection/inspection",
+			"style": {
+				"navigationBarTitleText": "巡检",	
+				"app-plus": {
+					"titleNView":{
+						"autoBackButton": true,
+						"buttons": [ 
+							{
+								"fontSrc":"/static/font/iconfont.ttf",
+								"width": "35px",
+								"background": "#00000000",	
+								"fontSize":"20",
+								"float": "right",
+								"color":"#fff",
+								"text": "\ue607"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/service/inspection/inspection-device",
+			"style": {
+				"navigationBarTitleText": "巡检设备",	
+				"app-plus": {
+					"titleNView":{
+						"autoBackButton": true,
+						"buttons": [ 
+							{
+								"fontSrc":"/static/font/iconfont.ttf",
+								"width": "35px",
+								"background": "#00000000",	
+								"fontSize":"20",
+								"float": "right",
+								"color":"#fff",
+								"text": "\ue607"
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/service/inspection/inspection-inventory",
+			"style": {
+				"navigationBarTitleText": "巡检清单"	
+			}
+		},
+		{
+			"path": "pages/service/inspection/inspection-inventory-add",
+			"style": {
+				"navigationBarTitleText": "巡检清单"	
+			}
+		},
+		{
+			"path": "pages/service/inspection/inspection-inventory-edit",
+			"style": {
+				"navigationBarTitleText": "巡检清单"	
+			}
+		},
+		{
+			"path": "pages/home/many",
+			"style": {
+				"navigationBarTitleText": "更多"	
+			}
+		},
+		{
+			"path": "pages/home/compile",
+			"style": {
+				"navigationBarTitleText": "编辑应用",
+				"app-plus": {
+					"titleNView": {
+						"titleSize": "17px",
+						"buttons": [{
+							"float": "right",
+							"text": "完成",
+							"fontSize": "14px",
+							"color": "#fff",
+							"width": "40px"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/service/inspection/inspection-repair",
+			"style": {
+				"navigationBarTitleText": "报修单"	
+			}
+		},
+		{
+			"path": "pages/service/inspection/inspection-punchCard",
+			"style": {
+				"navigationBarTitleText": "巡检打卡"	
+			}
+		},
+		{
+			"path": "pages/service/vehicle/vehicle",
+			"style": {
+				"navigationBarTitleText": "车管"
+			}
+		},
+		{
+			"path": "pages/service/consumables/consumables",
+			"style": {
+				"navigationBarTitleText": "耗材"
+			}
+		},
+		{
+			"path": "pages/service/consumables/consumables-list",
+			"style": {
+				"navigationBarTitleText": "耗材列表"
+			}
+		},
+		{
+			"path": "pages/service/consumables/purchaseapply/index",
+			"style": {
+				"navigationBarTitleText": "耗材采购"
+			}
+		},
+		{
+			"path": "pages/service/consumables/purchaseapply/purchaseapply-details",
+			"style": {
+				"navigationBarTitleText": "采购详情"
+			}
+		},
+		{
+			"path": "pages/service/consumables/purchaseapply/purchaseapply-audit",
+			"style": {
+				"navigationBarTitleText": "审核"
+			}
+		},
+		{
+			"path": "pages/service/consumables/purchaseapply/purchaseapply-editadd",
+			"style": {
+				"navigationBarTitleText": "采购"
+			}
+		},
+		{
+			"path": "pages/service/consumables/consumingapply/index",
+			"style": {
+				"navigationBarTitleText": "耗材领用"
+			}
+		},
+		{
+			"path": "pages/service/consumables/consumingapply/consuming-details",
+			"style": {
+				"navigationBarTitleText": "领用详情"
+			}
+		},
+		{
+			"path": "pages/service/consumables/consumingapply/consuming-audit",
+			"style": {
+				"navigationBarTitleText": "审核"
+			}
+		},
+		{
+			"path": "pages/service/consumables/consumingapply/consuming-editadd",
+			"style": {
+				"navigationBarTitleText": "领用"
+			}
+		},
+		{
+			"path": "pages/service/consumables/outrecord/consumables-out",
+			"style": {
+				"navigationBarTitleText": "出库记录"
+			}
+		},
+		{
+			"path": "pages/service/consumables/outrecord/outrecord-audit",
+			"style": {
+				"navigationBarTitleText": "审核"
+			}
+		},
+		{
+			"path": "pages/service/consumables/outrecord/outrecord-details",
+			"style": {
+				"navigationBarTitleText": "出库详情"
+			}
+		},
+		{
+			"path": "pages/service/consumables/outrecord/outrecord-warehousing",
+			"style": {
+				"navigationBarTitleText": "新增出库"
+			}
+		},
+		{
+			"path": "pages/service/consumables/record/consumables-enter",
+			"style": {
+				"navigationBarTitleText": "入库记录"
+			}
+		},
+		{
+			"path": "pages/service/consumables/record/consumables-detail",
+			"style": {
+				"navigationBarTitleText": "入库详情"
+			}
+		},
+		{
+			"path": "pages/service/consumables/record/consumables-audit",
+			"style": {
+				"navigationBarTitleText": "审核"
+			}
+		},
+		{
+			"path": "pages/service/consumables/record/consumables-warehousing",
+			"style": {
+				"navigationBarTitleText": "耗材入库"
+			}
+		},
+		{
+			"path": "pages/service/consumables/consumables-purchase",
+			"style": {
+				"navigationBarTitleText": "耗材采购"
+			}
+		},
+		{
+			"path": "pages/service/consumables/consumables-newadd",
+			"style": {
+				"navigationBarTitleText": "耗材采购"
+			}
+		},
+		{
+			"path": "pages/service/consumables/consumables-check",
+			"style": {
+				"navigationBarTitleText": "审核详情"
+			}
+		},
+		{
+			"path": "pages/service/contract/contract",
+			"style": {
+				"navigationBarTitleText": "合同"
+			}
+		},
+		{
+			"path": "pages/service/equipment/equipment",
+			"style": {
+				"navigationBarTitleText": "设备"
+			}
+		},
+		{
+			"path": "pages/service/clothes/clothes",
+			"style": {
+				"navigationBarTitleText": "工服"
+			}
+		},
+		{
+			"path": "pages/service/clothes/clothes-stockIn",
+			"style": {
+				"navigationBarTitleText": "入库"
+			}
+		},
+		{
+			"path": "pages/service/clothes/clothes-stockOut",
+			"style": {
+				"navigationBarTitleText": "出库"
+			}
+		},
+		{
+			"path": "pages/service/clothes/clothes-washReceive",
+			"style": {
+				"navigationBarTitleText": "洗涤收取"
+			}
+		},
+		{
+			"path": "pages/service/clothes/clothes-washReceive-detail",
+			"style": {
+				"navigationBarTitleText": "洗涤收取详情"
+			}
+		},
+		{
+			"path": "pages/service/clothes/clothes-washSend",
+			"style": {
+				"navigationBarTitleText": "洗涤发放"
+			}
+		},
+		{
+			"path": "pages/service/clothes/clothes-apply",
+			"style": {
+				"navigationBarTitleText": "申领"
+			}
+		},
+		{
+			"path": "pages/service/clothes/clothes-apply-detail",
+			"style": {
+				"navigationBarTitleText": "申领详情"
+			}
+		},
+		{
+			"path": "pages/service/clothes/clothes-apply-add",
+			"style": {
+				"navigationBarTitleText": "新增申领"
+			}
+		},
+		{
+			"path": "pages/service/clothes/clothes-apply-audit",
+			"style": {
+				"navigationBarTitleText": "申领审批"
+			}
+		},
+		{
+			"path": "pages/service/clothes/clothes-total",
+			"style": {
+				"navigationBarTitleText": "库存"
+			}
+		},
+		{
+			"path": "pages/service/clothes/clothes-writtenOff",
+			"style": {
+				"navigationBarTitleText": "报废管理"
+			}
+		},
+		{
+			"path": "pages/service/clothes/clothes-writtenOff-add",
+			"style": {
+				"navigationBarTitleText": "新增报废"
+			}
+		},
+		{
+			"path": "pages/service/project/project",
+			"style": {
+				"navigationBarTitleText": "项目"
+			}
+		},
+		{
+			"path": "pages/service/project/project-initiation/project-initiation",
+			"style": {
+				"navigationBarTitleText": "工程立项"
+			}
+		},
+		{
+			"path": "pages/service/project/project-initiation/project-creation",
+			"style": {
+				"navigationBarTitleText": "新建立项"
+			}
+		}, 
+		{
+			"path": "pages/service/project/project-initiation/project-detail",
+			"style": {
+				"navigationBarTitleText": "立项详情"
+			}
+		},
+		{
+			"path": "pages/service/project/project-purchase/project-purchase",
+			"style": {
+				"navigationBarTitleText": "项目采购"
+			}
+		},
+		{
+			"path": "pages/service/project/project-purchase/project-purchase-detail",
+			"style": {
+				"navigationBarTitleText": "采购详情"
+			}
+		},
+		{
+			"path": "pages/service/project/project-purchase/project-purchase-add",
+			"style": {
+				"navigationBarTitleText": "新增采购"
+			}
+		},
+		{
+			"path": "pages/service/project/project-progress/project-progress",
+			"style": {
+				"navigationBarTitleText": "项目进度"
+			}
+		},
+		{
+			"path": "pages/service/project/project-progress/project-progress-detail",
+			"style": {
+				"navigationBarTitleText": "进度详情"
+			}
+		},
+		{
+			"path": "pages/service/project/project-progress/project-progress-list",
+			"style": {
+				"navigationBarTitleText": "进度"
+			}
+		},
+		{
+			"path": "pages/service/project/project-progress/project-progress-increase",
+			"style": {
+				"navigationBarTitleText": "新增进度"
+			}
+		},
+		{
+			"path": "pages/service/project/project-contract/project-contract",
+			"style": {
+				"navigationBarTitleText": "项目合同"
+			}
+		},
+		{
+			"path": "pages/service/project/project-contract/project-contract-add",
+			"style": {
+				"navigationBarTitleText": "新增合同"
+			}
+		},
+		{
+			"path": "pages/service/project/project-contract/project-contract-detail",
+			"style": {
+				"navigationBarTitleText": "合同详情"
+			}
+		},
+		{
+			"path": "pages/service/project/project-accept/project-accept",
+			"style": {
+				"navigationBarTitleText": "项目验收"
+			}
+		},
+		{
+			"path": "pages/service/project/project-accept/project-accept-detail",
+			"style": {
+				"navigationBarTitleText": "验收详情"
+			}
+		},
+		{
+			"path": "pages/service/project/project-accept/project-accept-add",
+			"style": {
+				"navigationBarTitleText": "新增验收"
+			}
+		},
+		{
+			"path": "pages/service/project/project-payment/project-payment",
+			"style": {
+				"navigationBarTitleText": "项目付款"
+			}
+		},
+		{
+			"path": "pages/service/project/project-payment/project-payment-detail",
+			"style": {
+				"navigationBarTitleText": "付款详情"
+			}
+		},
+		{
+			"path": "pages/service/project/project-payment/project-payment-add",
+			"style": {
+				"navigationBarTitleText": "新增付款"
+			}
+		},
+		{
+			"path": "pages/service/satisfied/satisfied",
+			"style": {
+				"navigationBarTitleText": "满意度"
+			}
+		},
+		{
+			"path": "pages/service/satisfied/satisfied-service",
+			"style": {
+				"navigationBarTitleText": "服务监督"
+			}
+		},
+		{
+			"path": "pages/service/satisfied/satisfied-service-detail",
+			"style": {
+				"navigationBarTitleText": "服务监督详情"
+			}
+		},
+		{
+			"path": "pages/service/satisfied/satisfied-service-add",
+			"style": {
+				"navigationBarTitleText": "新增服务监督"
+			}
+		},
+		{
+			"path": "pages/service/satisfied/satisfied-question",
+			"style": {
+				"navigationBarTitleText": "问卷调查"
+			}
+		},
+		{
+			"path": "pages/service/satisfied/satisfied-question-detail",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/service/medicalWaste/medicalWaste",
+			"style": {
+				"navigationBarTitleText": "医废"
+			}
+		},
+		{
+			"path": "pages/service/medicalWaste/sorting/sorting",
+			"style": {
+				"navigationBarTitleText": "医废分拣"
+			}
+		},
+		{
+			"path": "pages/service/medicalWaste/sorting/sorting-add",
+			"style": {
+				"navigationBarTitleText": "新增分拣"
+			}
+		},
+		{
+			"path": "pages/service/medicalWaste/sorting/sorting-correct",
+			"style": {
+				"navigationBarTitleText": "纠正"
+			}
+		},
+		{
+			"path": "pages/service/medicalWaste/collect/collect",
+			"style": {
+				"navigationBarTitleText": "医废收集"
+			}
+		},
+		{
+			"path": "pages/service/medicalWaste/collect/collect-car",
+			"style": {
+				"navigationBarTitleText": "医废收集清单"
+			}
+		},
+		{
+			"path": "pages/service/medicalWaste/collect/collect-check",
+			"style": {
+				"navigationBarTitleText": "收集信息核验"
+			}
+		},
+		{
+			"path": "pages/service/medicalWaste/collect/collect-correct",
+			"style": {
+				"navigationBarTitleText": "纠正核验"
+			}
+		},
+		{
+			"path": "pages/service/medicalWaste/collectRecord/collectRecord",
+			"style": {
+				"navigationBarTitleText": "收集记录"
+			}
+		},
+		{
+			"path": "pages/service/medicalWaste/statistics/statistics",
+			"style": {
+				"navigationBarTitleText": "收集统计"
+			}
+		},
+		{
+			"path": "pages/service/medicalWaste/abnormal/abnormal",
+			"style": {
+				"navigationBarTitleText": "异常处理"
+			}
+		},
+		{
+			"path": "pages/service/medicalWaste/putInOut/putInOut",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/service/medicalWaste/putInOut/putInOut-menu",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/service/medicalWaste/putInOut/putInOut-list",
+			"style": {
+				"navigationBarTitleText": "出库列表"
+			}
+		},
+		{
+			"path": "pages/service/medicalWaste/putInOut/putInOut-check",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/service/medicalWaste/putInOut/putInOut-out",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/service/medicalWaste/putInOut/putInOut-add",
+			"style": {
+				"navigationBarTitleText": "新增出库"
+			}
+		},
+		{
+			"path": "pages/service/medicalWaste/detail",
+			"style": {
+				"navigationBarTitleText": "详情"
+			}
+		},
+		{
+			"path": "pages/service/transport/transport",
+			"style": {
+				"navigationBarTitleText": "运送"
+			}
+		},
+		{
+			"path": "pages/service/transport/transport-detail",
+			"style": {
+				"navigationBarTitleText": "接单详情"
+			}
+		},
+		{
+			"path": "pages/service/diet/diet",
+			"style": {
+				"navigationBarTitleText": "膳食"
+			}
+		},
+		{
+			"path": "pages/service/diet/table-reservation/add-address",
+			"style": {
+				"navigationBarTitleText": "新增地址"
+			}
+		},
+		{
+			"path": "pages/service/diet/table-reservation/user-address",
+			"style": {
+				"navigationBarTitleText": "我的地址"
+			}
+		},
+		{
+			"path": "pages/service/diet/table-reservation/payment",
+			"style": {
+				"navigationBarTitleText": "支付结果"
+			}
+		},
+		{
+			"path": "pages/service/diet/table-reservation/subitm-order",
+			"style": {
+				"navigationBarTitleText": "确认支付"
+			}
+		},
+		{
+			"path": "pages/service/diet/table-reservation/affirm-order",
+			"style": {
+				"navigationBarTitleText": "确认订单"
+			}
+		},
+		{
+			"path": "pages/service/diet/table-reservation/cuisine-detail",
+			"style": {
+				"navigationBarTitleText": "菜品详情"
+			}
+		},
+		{
+			"path": "pages/service/cleaning/cleaning",
+			"style": {
+				"navigationBarTitleText": "保洁"
+			}
+		},
+		{
+			"path": "pages/service/vehicle/use-car-register/use-car-register",
+			"style": {
+				"navigationBarTitleText": "用车登记"
+			}
+		},
+		{
+			"path": "pages/service/vehicle/use-car-register/use-car-register-edit",
+			"style": {
+				"navigationBarTitleText": "编辑用车登记"
+			}
+		},
+		{
+			"path": "pages/service/contract/contract-audit/contract-audit",
+			"style": {
+				"navigationBarTitleText": "合同审核"
+			}
+		},{
+			"path": "pages/service/contract/contract-template/contract-template-add",
+			"style": {
+				"navigationBarTitleText": "新增模板"
+			}
+		},{
+			"path": "pages/service/contract/contract-template/contract-template",
+			"style": {
+				"navigationBarTitleText": "合同模板"
+			}
+		},{
+			"path": "pages/service/contract/contract-template/contract-template-detail",
+			"style": {
+				"navigationBarTitleText": "模板详情"
+			}
+		},{
+			"path": "pages/service/contract/contract-audit/contract-audit-add",
+			"style": {
+				"navigationBarTitleText": "新增合同"
+			}
+		},{
+			"path": "pages/service/contract/contract-audit/contract-audit-detail",
+			"style": {
+				"navigationBarTitleText": "审核详情"
+			}
+		},{
+			"path": "pages/service/contract/contract-management/contract-management",
+			"style": {
+				"navigationBarTitleText": "合同管理"
+			}
+		},{
+			"path": "pages/service/contract/contract-management/contract-managemer-datail",
+			"style": {
+				"navigationBarTitleText": "合同详情"
+			}
+		},{
+			"path": "pages/service/contract/contract-management/contract-interim-payment",
+			"style": {
+				"navigationBarTitleText": "合同进度款"
+			}
+		},{
+			"path": "pages/service/equipment/equipment-maintenance/equipment-maintenance",
+			"style": {
+				"navigationBarTitleText": "设备保养",
+				"app-plus": {
+					"titleNView":{
+						"autoBackButton": true,
+						"buttons": [ 
+							{
+								"fontSrc":"/static/font/iconfont.ttf",
+								"width": "35px",
+								"background": "#00000000",	
+								"fontSize":"20",
+								"float": "right",
+								"color":"#fff",
+								"text": "\ue607"
+							}
+						]
+					}
+				}
+			}
+		},{
+			"path": "pages/service/equipment/equipment-maintenance/maintain-add",
+			"style": {
+				"navigationBarTitleText": "保养清单"
+			}
+		},{
+			"path": "pages/service/equipment/equipment-archives/equipment-archives",
+			"style": {
+				"navigationBarTitleText": "设备档案"
+			}
+		},{
+			"path": "pages/service/equipment/equipment-archives/equipment-archives-add",
+			"style": {
+				"navigationBarTitleText": "新增设备"
+			}
+		},{
+			"path": "pages/service/equipment/equipment-archives/equipment-archives-detail",
+			"style": {
+				"navigationBarTitleText": "设备信息"
+			}
+		},{
+			"path": "pages/service/equipment/maintain-record/maintain-record",
+			"style": {
+				"navigationBarTitleText": "维修记录"
+			}
+		},{
+			"path": "pages/service/equipment/scrap-record/scrap-record",
+			"style": {
+				"navigationBarTitleText": "报废记录"
+			}
+		},{
+			"path": "pages/service/vehicle/car-approval/useCar-approval-list",
+			"style": {
+				"navigationBarTitleText": "用车审批"
+			}
+		},
+		{
+			"path": "pages/service/vehicle/car-approval/repair-approval-list",
+			"style": {
+				"navigationBarTitleText": "报修审批"
+			}
+		},
+		{
+			"path": "pages/service/vehicle/vehicle-maintain/vehicle-maintain-handle",
+			"style": {
+				"navigationBarTitleText": "报修审批"
+			}
+		},
+		{
+			"path": "pages/service/vehicle/vehicle-maintain/vehicle-maintain-edit",
+			"style": {
+				"navigationBarTitleText": "报修编辑"
+			}
+		},
+		{
+			"path": "pages/service/vehicle/car-approval/useCar-handle",
+			"style": {
+				"navigationBarTitleText": "用车审批"
+			}
+		},
+		{
+			"path": "pages/service/vehicle/vehicle-record/vehicle-record",
+			"style": {
+				"navigationBarTitleText": "车辆档案"
+			}
+		},
+		{
+			"path": "pages/service/vehicle/vehicle-record/vehicle-record-add",
+			"style": {
+				"navigationBarTitleText": "新增车辆"
+			}
+		},{
+			"path": "pages/service/vehicle/vehicle-record/vehicle-record-detail",
+			"style": {
+				"navigationBarTitleText": "车辆详情"
+			}
+		},
+		{
+			"path": "pages/contacts/contacts",
+			"style": {
+				"navigationBarTitleText": "通讯录",
+				"app-plus": {
+					"titleNView": {
+						"titleSize": "17px"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/contacts/contacts-list",
+			"style": {
+				"navigationBarTitleText": "通讯录",
+				"app-plus": {
+					"titleNView": {
+						"titleSize": "17px",
+						"buttons": [{
+							"float": "right",
+							"text": "关闭",
+							"fontSize": "17px",
+							"width": "50px",
+							"color": "#fff"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/contacts/contacts-detail",
+			"style": {
+				"navigationBarTitleText": "通讯录",
+				"app-plus": {
+					"titleNView": {
+						"titleSize": "17px"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/contacts/person-contacts",
+			"style": {
+				"navigationBarTitleText": "请选择",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": "false",
+						"titleSize": "17px",
+						"buttons": [{
+							"float": "left",
+							"text": "取消",
+							"fontSize": "17px",
+							"color": "#fff",
+							"width": "60px"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/contacts/person-contacts-list",
+			"style": {
+				"navigationBarTitleText": "通讯录",
+				"app-plus": {
+					"titleNView": {
+						"titleSize": "17px"
+
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/contacts/person-contacts-list-popup",
+			"style": {
+				"navigationBarTitleText": "已选择",
+				"app-plus": {
+					"animationType": "slide-in-bottom",
+					"titleNView": {
+						"autoBackButton": "false",
+						"titleSize": "17px",
+						"buttons": [{
+							"float": "left",
+							"text": "清空",
+							"fontSize": "17px",
+							"color": "#FF0000",
+							"width": "60px"
+						}, {
+							"float": "right",
+							"text": "关闭",
+							"fontSize": "17px",
+							"color": "#fff",
+							"width": "60px"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/contacts/org-contacts",
+			"style": {
+				"navigationBarTitleText": "请选择",
+				"app-plus": {
+					"titleNView": {
+						"autoBackButton": "false",
+						"titleSize": "17px",
+						"buttons": [{
+							"float": "left",
+							"text": "取消",
+							"fontSize": "17px",
+							"color": "#FFFFFF",
+							"width": "60px"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/contacts/org-contacts-list",
+			"style": {
+				"navigationBarTitleText": "通讯录",
+				"app-plus": {
+					"titleNView": {
+						"titleSize": "17px"
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/service/vehicle/vehicle-maintain/vehicle-maintain",
+			"style": {
+				"navigationBarTitleText": "车辆报修"
+			}
+		},{
+			"path": "pages/service/vehicle/vehicle-maintain/vehicle-maintain-add",
+			"style": {
+				"navigationBarTitleText": "新增报修",
+				"app-plus": {
+					"titleNView": {
+						"titleSize": "17px",
+						"buttons": [
+							{
+								"float": "right",
+								"text": "流程须知",
+								"fontSrc": "/static/font/iconfont.ttf",
+								"fontSize": "14px",
+								"color": "#fff",
+								"width": "65px"
+				
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/service/vehicle/use-car-register/car-occupancy",
+			"style": {
+				"navigationBarTitleText": "车辆使用情况"
+			}
+		},
+		{
+			"path": "pages/service/process-instructions",
+			"style": {
+				"navigationBarTitleText": "流程须知"
+			}
+		},
+		{
+			"path": "pages/service/vehicle/use-car-register/use-car-register-add",
+			"style": {
+				"navigationBarTitleText": "申请用车",
+				"app-plus": {
+					"titleNView": {
+						"titleSize": "17px",
+						"buttons": [{
+								"float": "right",
+								"text": "\ue619",
+								"fontSrc": "/static/font/iconfont.ttf",
+								"fontSize": "22px",
+								"color": "#fff",
+								"width": "42px"
+							},
+							{
+								"float": "right",
+								"text": "流程须知",
+								"fontSrc": "/static/font/iconfont.ttf",
+								"fontSize": "14px",
+								"color": "#fff",
+								"width": "65px"
+				
+							}
+						]
+					}
+				}
+			}
+		},{
+			"path": "pages/service/vehicle/use-car-register/apply-add",
+			"style": {
+				"navigationBarTitleText": "新增申请"
+			}
+		},{
+			"path": "pages/service/equipment/maintain-record/maintain-record-add",
+			"style": {
+				"navigationBarTitleText": "新增维修"
+			}
+		},{
+			"path": "pages/service/equipment/maintain-record/maintain-record-detail",
+			"style": {
+				"navigationBarTitleText": "记录详情"
+			}
+		},{
+			"path": "pages/service/equipment/scrap-record/scrap-record-add",
+			"style": {
+				"navigationBarTitleText": "报废申请"
+			}
+		},{
+			"path": "pages/service/equipment/scrap-record/scrap-record-detail",
+			"style": {
+				"navigationBarTitleText": "记录详情"
+			}
+		},{
+			"path": "pages/service/vehicle/use-car-register/use-car-register-detail",
+			"style": {
+				"navigationBarTitleText": "用车详情"
+			}
+		},
+		// {
+		// 	"path": "pages/service/vehicle/return-car-register/return-car-register-detail",
+		// 	"style": {
+		// 		"navigationBarTitleText": "还车详情"
+		// 	}
+		// },
+		{
+			"path": "pages/service/vehicle/vehicle-maintain/vehicle-maintain-detail",
+			"style": {
+				"navigationBarTitleText": "保养详情"
+			}
+		},{
+			"path": "pages/service/diet/table-reservation/table-reservation",
+			"style": {
+				"navigationBarTitleText": "订餐"
+			}
+		},{
+			"path": "pages/service/diet/table-reservation/food-list",
+			"style": {
+				"navigationBarTitleText": "订餐"
+			}
+		},{
+			"path": "pages/service/diet/order/order",
+			"style": {
+				"navigationBarTitleText": "订单"
+			}
+		},{
+			"path": "pages/service/diet/order/order-detail",
+			"style": {
+				"navigationBarTitleText": "订单详情"
+			}
+		},{
+			"path": "pages/service/diet/recharge",
+			"style": {
+				"navigationBarTitleText": "饭卡充值"
+			}
+		},{
+			"path": "pages/service/diet/consume-record",
+			"style": {
+				"navigationBarTitleText": "账单"
+			}
+		},
+		{
+			"path": "pages/service/meeting/meeting",
+			"style": {
+				"navigationBarTitleText": "会议"
+			}
+		},
+		{
+			"path": "pages/service/meeting/meeting-add",
+			"style": {
+				"navigationBarTitleText": "会议申请",
+				"app-plus": {
+					"titleNView": {
+						"titleSize": "17px",
+						"buttons": [{
+								"float": "right",
+								"text": "\ue63a",
+								"fontSrc": "/static/font/iconfont.ttf",
+								"fontSize": "22px",
+								"color": "#fff",
+								"width": "42px"
+							},
+							{
+								"float": "right",
+								"text": "流程须知",
+								"fontSrc": "/static/font/iconfont.ttf",
+								"fontSize": "14px",
+								"color": "#fff",
+								"width": "65px"
+				
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/service/meeting/meeting-detail",
+			"style": {
+				"navigationBarTitleText": "会议详情"
+			}
+		},
+		{
+			"path": "pages/service/meeting/meeting-handle",
+			"style": {
+				"navigationBarTitleText": "会议审批"
+			}
+		},
+		{
+			"path": "pages/service/meeting/meeting-room-occupancy",
+			"style": {
+				"navigationBarTitleText": "会议室管理",
+				"app-plus": {
+					"titleNView": {
+						"titleSize": "17px"
+					}
+				}
+			}
+		}
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#0DD474",
+		"backgroundColor": "#0DD474"
+	},
+	"tabBar": {
+		"color": "#333333",
+		"selectedColor": "#0DD474",
+		"borderStyle": "black",
+		"backgroundColor": "#FFFFFF",
+		"list": [
+			{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/img/tabBar/home.png",
+				"selectedIconPath": "static/img/tabBar/home-on.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/service/service",
+				"iconPath": "static/img/tabBar/service.png",
+				"selectedIconPath": "static/img/tabBar/service-on.png",
+				"text": "服务"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"iconPath": "static/img/tabBar/user.png",
+				"selectedIconPath": "static/img/tabBar/user-on.png",
+				"text": "我的"
+			}
+		]
+	}
+}
